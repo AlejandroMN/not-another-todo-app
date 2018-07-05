@@ -7,6 +7,7 @@ import {TodoDataService} from './todo-data.service';
 import { AgGridExampleComponent } from './ag-grid-example/ag-grid-example.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule} from '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     AgGridModule.withComponents([]),
     FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [TodoDataService],
   bootstrap: [AppComponent]
